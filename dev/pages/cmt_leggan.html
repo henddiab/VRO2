@@ -1,0 +1,163 @@
+{% extends "cmt_layout.html" %} {% set title = 'اللجان' %} {% block content %}
+
+<div class="main-content" id="mainContent">
+
+    <section class="section ptsm">
+        <div class="container-fluid">
+            <div class="title-wrapper">
+                <h1 class="title">اللجان</h1>
+                <div class="form-inline">
+                    <div>
+                        <div class="select-wrapper">
+                            <select name="" class="form-control" id="">
+                       <option>جميع الحالات</option>
+                       <option value="">قيد الانشاء</option>
+                       <option value="">لم تبدأ</option>
+                       <option value="">قائمة</option>
+                       <option value="">متوقفة</option>
+                       <option value="">تم التأجيل</option>
+                       <option value="">قيد الغلق</option>
+                       <option value="">تم الاغلاق</option>
+                       <option value="">تم الضم</option>
+                       <option value="">ملغاة</option>
+                   </select>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="select-wrapper">
+                            <select name="" class="form-control" id="">
+                       <option>جميع التصنيفات</option>
+                       <option value="">لجان محلية</option>
+                       <option value="">لجان داخلية توجيهية</option>
+                       <option value="">لجان داخلية تنفيذية</option>
+                       <option value="">لجان مجلس الادارة</option>
+                       <option value="">لجان وزارية</option>
+                       <option value="">لجان برامج الرؤية</option>
+                       <option value="">لجان مجالس المناطق</option>
+                       <option value="">لجان هيئة الخبراء</option>
+                       <option value="">لجان هيئات التطوير</option>
+                   </select>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary btn-wide">إنشاء لجنة</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-responsive mtmd">
+                <table class="js-datatable table table-striped table-borderless table-hover">
+                    <thead>
+                        <tr>
+                            <th>الاهمية</th>
+                            <th width="100%">اسم اللجنة</th>
+                            <th>حالة اللجنة</th>
+                            <th>مدة اللجنة</th>
+                            <th>مصدر اللجنة</th>
+                            <th>تصنيف اللجنة</th>
+                            <th>سرية اللجنة</th>
+                            <th>تاريخ الانشاء</th>
+                            <th>اخر تحديث</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="leggan-status regular"></span></td>
+                            <td>
+                                <div class="subject"><a href="cmt_lagna_details.html">لجنة التحول المدني</a></div>
+                            </td>
+                            <td><span class="leg-status yellow"></span> لم تبدأ</td>
+                            <td>دائمة</td>
+                            <td>مجلس الشئون</td>
+                            <td>توجيهية</td>
+                            <td>سرية</td>
+                            <td>25/8/1440</td>
+                            <td>25/8/1440</td>
+                        </tr>
+                        <tr>
+                            <td><span class="leggan-status regular"></span></td>
+                            <td>
+                                <div class="subject"><a href="cmt_lagna_details.html">لجنة التحول المدني</a></div>
+                            </td>
+                            <td><span class="leg-status orange"></span> قيد الانشاء</td>
+                            <td>مؤقتة</td>
+                            <td>الديوان الملكي</td>
+                            <td>توجيهية</td>
+                            <td>سرية</td>
+                            <td>25/8/1440</td>
+                            <td>25/8/1440</td>
+                        </tr>
+                        <tr>
+                            <td><span class="leggan-status regular"></span></td>
+                            <td>
+                                <div class="subject"><a href="cmt_lagna_details.html">لجنة التحول المدني</a></div>
+                            </td>
+                            <td><span class="leg-status green"></span> قائمة</td>
+                            <td>دائمة</td>
+                            <td>ههيئة الخبراء</td>
+                            <td>توجيهية</td>
+                            <td>سرية</td>
+                            <td>25/8/1440</td>
+                            <td>25/8/1440</td>
+                        </tr>
+                        <tr>
+                            <td><span class="leggan-status important"></span></td>
+                            <td>
+                                <div class="subject"><a href="cmt_lagna_details.html">لجنة التحول المدني</a></div>
+                            </td>
+                            <td><span class="leg-status pink"></span> قيد الاغلاق</td>
+                            <td>مؤقتة</td>
+                            <td>تكليف داخلي</td>
+                            <td>توجيهية</td>
+                            <td>سرية</td>
+                            <td>25/8/1440</td>
+                            <td>25/8/1440</td>
+                        </tr>
+                        <tr>
+                            <td><span class="leggan-status regular"></span></td>
+                            <td>
+                                <div class="subject"><a href="cmt_lagna_details.html">لجنة التحول المدني</a></div>
+                            </td>
+                            <td><span class="leg-status gray"></span> متوقفة</td>
+                            <td>دائمة</td>
+                            <td>مجلس الشئون</td>
+                            <td>توجيهية</td>
+                            <td>سرية</td>
+                            <td>25/8/1440</td>
+                            <td>25/8/1440</td>
+                        </tr>
+                        <tr>
+                            <td><span class="leggan-status regular"></span></td>
+                            <td>
+                                <div class="subject"><a href="cmt_lagna_details.html">لجنة التحول المدني</a></div>
+                            </td>
+                            <td><span class="leg-status red"></span> مغلقة</td>
+                            <td>مؤقتة</td>
+                            <td>تكليف داخلي</td>
+                            <td>توجيهية</td>
+                            <td>سرية</td>
+                            <td>25/8/1440</td>
+                            <td>25/8/1440</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="table-footer">
+                <div class="table-exports">
+                    <a href="#" id="excel" class="btn btn-default btn-sm"><i class="fas fa-file-excel"></i>&nbsp; تصدير إلي أكسيل</a>
+                    <a href="#" class="btn btn-default btn-sm"><i class="fas fa-file-word"></i>&nbsp; تصدير إلي ملف word</a>
+                </div>
+            </div>
+
+            <div class="mtlg flex">
+                <p><span class="leggan-status regular"></span>&nbsp; عادي</p>
+                &nbsp;&nbsp;&nbsp;
+                <p><span class="leggan-status important"></span>&nbsp; مهم</p>
+            </div>
+
+        </div>
+    </section>
+
+</div>
+{% endblock content %}
